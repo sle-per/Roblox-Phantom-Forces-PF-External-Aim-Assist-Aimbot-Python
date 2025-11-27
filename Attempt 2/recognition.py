@@ -69,10 +69,11 @@ while True:
             X = max_loc[0] + centerW
             Y = max_loc[1] + centerH
             nX = -(crosshairU - X)
-            nY = -(crosshairU - Y)
+            nY = -(crosshairU - Y) + 5
             print(f"{nX},{nY}", flush=True)
         else:
             print("", flush=True)  # color doesn't match
     else:
         print("", flush=True)  # print nothing (no move)
     time.sleep(0.010)  #to minimise CPU usage
+
