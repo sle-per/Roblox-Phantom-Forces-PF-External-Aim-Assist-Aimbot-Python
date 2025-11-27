@@ -30,11 +30,9 @@ StartScript:
         return
     }
     pypyPath := "C:\Users\dongj\pypy\pypy3.10-v7.3.15-win64\pypy3.exe"
-    scriptPath := "C:\Users\dongj\Documents\screen_capture.py"
+    scriptPath := "C:\Users\dongj\Downloads\Attempt 2\recognition.py"
     shell := ComObjCreate("WScript.Shell")
     exec := shell.Exec("""" . pypyPath . """ """ . scriptPath . """")
-    WinWait, ahk_pid %exec.ProcessID%
-    WinHide, ahk_pid %exec.ProcessID%
     GuiControl, , StatusText, Status: Running
     GuiControl, , PythonStatus, Python Status: Working
     SetTimer, ReadOutput, 10
