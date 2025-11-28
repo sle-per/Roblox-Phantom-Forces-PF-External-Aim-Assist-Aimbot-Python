@@ -17,7 +17,8 @@ Triggerbot (Will interfere with your firing inputs, therefore is separated from 
 # Also requires modification to script by plain text (open main.py/ trigger.py with text editing apps like Notepad)
 # How to use script:
 1. Download the entire file in zip and extract to wherever you like
-2. Run *lib-check.py* to ensure that you have installed the required libraries (script won't work if you don't install them)
+2. Run ``pip install -r requirements.txt`` to install the required libraries.
+  * Run *lib-check.py* to ensure that they have been installed properly (script won't work if you don't install them)
 3. Open *main.py* or *trigger.py* with Notepad or any text editing software
 4. Scroll or use Find Tool to find the phrase *Sensitivity*
 5. Input the corresponding sensitivity values for each setting
